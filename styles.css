@@ -1,0 +1,68 @@
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    font-size: 1.25rem;      
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul, li, p {
+    font-size: 1.2rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffd200;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, li {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.artwork {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0;
+}
+.art-shape {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    box-shadow: 0 2px 8px rgba(33,147,176,0.2);
+    animation: float 3s ease-in-out infinite alternate;
+}
+.art-shape:nth-child(2) {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    animation-delay: 1s;
+}
+.art-shape:nth-child(3) {
+    background: linear-gradient(135deg, #f953c6, #b91d73);
+    animation-delay: 2s;
+}
+@keyframes float {
+    to { transform: translateY(-20px) scale(1.1); }
+}
+
+
+<div class="artwork">
+    <div class="art-shape"></div>
+    <div class="art-shape"></div>
+    <div class="art-shape"></div>
+</div>
